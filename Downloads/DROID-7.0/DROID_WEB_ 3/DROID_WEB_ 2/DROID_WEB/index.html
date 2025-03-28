@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="container">
+          <div class="logo">
+              <a href="/">
+                  <img src="assets/images-vids/DROID_LOGO-.png" alt="DROID 7.0 Logo">
+              </a>
+          </div>
+          <ul class="menu">
+              <li class="menu-list"><a href="#about" class="menu-link">About</a></li>
+              <li class="menu-list"><a href="#second" class="menu-link">Events</a></li>
+              <li class="menu-list"><a href="#page5" class="menu-link">Itinerary</a></li>
+              <li class="menu-list"><a href="#team" class="menu-link">Team</a></li>
+              <li class="menu-list"><a href="#Sponsors" class="menu-link">Sponsors</a></li>
+              <li class="menu-list"><a href="#Contact Us" class="menu-link">Contact</a></li>
+              <li class="menu-list"><a href="https://forms.gle/UXNyDh5TWopMxXZi9" target="_blank" rel="noopener noreferrer" class="menu-link">Register</a></li>
+          </ul>              
+          </ul>
+      </div>
+  </nav>
+
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+
+    <!--Pre-Loader -->
+    <div class="pre-loader">
+        <p>loading</p>
+        <div class="counter">
+            <div class="digit-1">
+                <div class="num">0</div>
+                <div class="num offset">1</div>
+            </div>
+            <div class="digit-2">
+                <div class="num">0</div>
+                <div class="num offset">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+                <div class="num">0</div>
+            </div>
+            <div class="digit-3">
+                <div class="num">0</div>
+                <div class="num">1</div>
+                <div class="num">2</div>
+                <div class="num">3</div>
+                <div class="num">4</div>
+                <div class="num">5</div>
+                <div class="num">6</div>
+                <div class="num">7</div>
+                <div class="num">8</div>
+                <div class="num">9</div>
+            </div>
+            <div class="digit-4">%</div>
+        </div>
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="scroll-content">
+      <div class="section section--full" id="first">
+        <div class="vertical-center">
+            <div class="vertical-center__inner"> 
+            </div>
+        </div>
+    
+        <!-- Video Background (from original) -->
+        <div class="hero-content">
+            <div class="video-wrapper">
+                <div class="video-container" data-scroll data-scroll-speed="2">
+                    <video autoplay muted loop>
+                        <source src="assets/images-vids/droid showreel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add this after the first section (after the video section) and before the events section -->
+    <div class="section section--full" id="about">
+        <div class="about-container">
+            <div class="about-left">
+                <h2 class="about-header">ABOUT DROID 7.0</h2>
+                <p class="about-text" style="text-align: justify;">
+                    Droid 7.0 is a two-day annual tech-cult fest that combines a variety of competitions, advanced workshops, technical displays, and other activities to encourage students from all around the nation to perform at their highest level. The goal of this tech-cult fest is to provide students with a platform to address some of the serious issues we encounter every day, instilling a culture of product innovation and a problem-solving attitude in the process.
+                </p>                
+            <a href="https://forms.gle/UXNyDh5TWopMxXZi9" target="_blank" rel="noopener noreferrer" class="register-btn">Register Now</a>
+        </div>
+            <div class="about-right">
+                <img src="assets/images-vids/grp photo.jpg" alt="DROID 7.0 Event" class="about-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="section section--full" id="about-csi">
+        <div class="about-container">
+            <div class="about-left">
+                <img src="assets/images-vids/csilogo.jpg" alt="CSI Logo" class="about-image">
+            </div>
+            <div class="about-right about-text-content">
+                <h2 class="about-header">About CSI</h2>
+                <div class="text-wrapper">
+                    <p class="about-text" style="text-align: justify;">
+                        Established in 1965, the Computer Society of India, or CSI is the first and largest body of computer professionals in India. It is a non-profit professional meet to exchange views and information learn and share ideas regarding advancement of theory and practice of Computer Engineering and Technology Systems, Science and Engineering, Information Processing and many more. The national body now has 72 chapters across India, 512 student branches, and over 110000 members, including noted IT industry leaders, scientists, and dedicated mathematicians.
+                    </p>
+                    <ul class="csi-points">
+                        <li>Regularly organizes workshops, seminars conventions, and technical talks for the benefit of professionals and users of IT apart from conducting development programs for professionals, researchers and students.</li>
+                        <li>Works closely with other industry associations, government bodies and academia to ensure that the benefits of IT advancement ultimately percolate down to every single citizen of India.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <!-- Events Section (Horizontal Scroll) -->
+        <div class="section section--vertical" id="second">
+            <div class="block-list">
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/workshop.png" alt="Workshop" class="event-image">
+                        </div>
+                        <p class="event-description">Interactive, hands-on learning
+                            sessions focused on specific
+                            skills in technology,
+                            innovation, or other relevant
+                            domains. Experts lead these
+                            workshops, offering practical
+                            knowledge and industryrelevant
+                            techniques to enhance
+                            participant expertise in their
+                            chosen fields.</p>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/tech exhibit.png" alt="Tech Exhibit" class="event-image">
+                        </div>
+                        <p class="event-description">A showcase of innovative projects where participants
+                            present hardware or software solutions they've developed.
+                            This event highlights creativity, problem-solving, and
+                            technical expertise while providing a platform to share
+                            ideas and inspire others.</p>
+                        <a href="https://drive.google.com/file/d/19Nv2W3k3erN1oUM--y2UI38auqmMgpDT/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/verbal relay.png" alt="Verbal Relay" class="event-image">
+                        </div> 
+                        <p class="event-description">A dynamic team debate or discussion where participants face off on predefined topics.
+                            Teams showcase their ability to think critically, present arguments persuasively, and
+                            collaborate effectively in a stimulating and competitive environment.</p>
+                        <a href="https://drive.google.com/file/d/1WobzQyBcAsyvR-aC2W7hRfvPS4QvY9bd/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/code quest.png" alt="Code Quest" class="event-image">
+                        </div>
+                        
+                        <p class="event-description">Code Quest is a competitive multi-round coding competition where participants
+                            solve algorithmic problems under time constraints. Successful completion
+                            without errors advances participants to the second round, offering a fun way to
+                            enhance coding proficiency through friendly competitions.</p>
+                        <a href="https://drive.google.com/file/d/1DhF_GPVCjb0PNv2Pb0hke1fKVYzsDc18/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/mock recruitment.png" alt="Mock Recruitment" class="event-image">
+                        </div>
+                        <p class="event-description">A real-world recruitment simulation to prepare
+                            participants for job placements. It includes online
+                            assessment and interviews, mirroring professional
+                            hiring processes. Participants gain insights into
+                            industry expectations, improve communication
+                            skills, and build confidence for their future careers.</p>
+                        <a href="https://drive.google.com/file/d/1zFCs7bsB2bNmImNJyrqRjrzAOuNig1kQ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/design-o-thon.png" alt="Design-A-thon" class="event-image">
+                        </div>
+                        <p class="event-description">A creative competition aimed at designing stunning websites, portfolios, or applications.
+                            Participants use design tools like Figma, Canva, Adobe, or Sketch, and no prior coding
+                            experience is necessary. It's a platform to showcase imagination and visualization.</p>
+                        <a href="https://drive.google.com/file/d/1XPKlVt4zyVp1SYSGdfd7R_LDtq68bh06/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/entrepreneur's point.png" alt="Entrepreneur's Point" class="event-image">
+                        </div>
+                        <p class="event-description">This competition invites participants to pitch their innovative business ideas or products
+                            to a panel of judges. Teams present detailed plans, showcasing creativity,
+                            entrepreneurial spirit, and problem-solving skills, aiming to impress potential
+                            investors.</p>
+                        <a href="https://drive.google.com/file/d/1LCQP1-c84UOnX3VscJX8CuUgz9dS_HYf/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/vlogify.png" alt="Vlogify" class="event-image">
+                        </div>
+                        <p class="event-description">A creative competition where participants
+                            write scripts and produce short videos
+                            based on given themes. Combining
+                            storytelling, video editing, and creativity,
+                            this event encourages participants to
+                            deliver impactful messages or entertaining
+                            content within a limited timeframe.</p>
+                        <a href="https://drive.google.com/file/d/10klSBZ3TNk2Ob2wZo6Yps7uCi7yqCS5J/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="rulebook-btn"
+                           onclick="window.open(this.href, '_blank'); return false;">Rulebook</a>
+                    </div>
+                </div>
+                <div class="block-list__item">
+                    <div class="block-list__item-inner">
+                        <div class="event-image-container">
+                            <img src="assets/images-vids/fiesta.png" alt="Fiesta" class="event-image">
+                        </div>
+                        <p class="event-description">It is a discussion where person is assessed for the overall personality – thoughts, feelings and behaviour - of an individual in a group. It's useful for admission, scholarship, job interviews, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section--full" id="page5">
+            <div id="page5-left">
+                <div id="page5-content">
+                    <div class="uiux">
+                        <details open>
+                            <summary>
+                                <h1>Day 1</h1>
+                            </summary>
+                            <div id="page-container">
+                                <!-- 9 divisions for Day 1 -->
+                                <div class="page5-elem">
+                                    <h3>OPENING CEREMONY</h3>
+                                    <p>9:00 AM - 10:30 AM<br>Mini Auditorium</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>TECHNICAL WORKSHOP</h3>
+                                    <p> 10:30 AM - 1:30 PM<br>Mini Auditorium</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>HIGH TEA</h3>
+                                    <p>11:00 AM - 11:30 AM
+                                        <br>Band Stand</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>VLOGIFY</h3>
+                                    <p>2:30 PM</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>MOCK RECRUITMENT</h3>
+                                    <p>11:30 AM - 1:30 PM
+                                        <br>LG 15,16,17</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>TECH EXHIBIT</h3>
+                                    <p>2:30 PM - 4:30 PM
+                                        <br>ABB 01</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>INDIA'S GOT LATENT</h3>
+                                    <p>4:30 PM - 6:30 PM
+                                        <br>Mini Auditorium</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>THE SPREE CORNER</h3>
+                                    <p>11:00 AM - 4:00 PM
+                                        <br>ABB Ground Floor</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>FIESTA (SCAVENGER HUNT)</h3>
+                                    <p>2:30 PM - 4:30 PM
+                                        <br>ABB Lobby</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page5-right">
+                <div id="page5-content">
+                    <div class="uiux">
+                        <details open>
+                            <summary>
+                                <h1>Day 2</h1>
+                            </summary>
+                            <div id="page-container">
+                                <!-- 7 divisions for Day 2 -->
+                                <div class="page5-elem">
+                                    <h3>CODE QUEST</h3>
+                                    <p>9:00 AM - 11:00 AM
+                                        <br>LG 15,16,17</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>DESIGN-A-THON</h3>
+                                    <p> 9:00 AM - 11:00 AM
+                                        <br>ABB Room 32</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>ENTREPRENEUR'S POINT</h3>
+                                    <p>11:30 AM - 1:30 PM
+                                        <br>ABB 32</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>VERBAL RELAY</h3>
+                                    <p>11:30 AM - 1:30 PM
+                                        <br>ABB 01</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>THE SPREE CORNER</h3>
+                                    <p> 11:00 AM - 1:30 PM
+                                        <br>ABB Ground Floor</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>FIESTA (FUNTOPIA)</h3>
+                                    <p> 12:00 PM - 1:30 PM
+                                        <br>ABB 01</p>
+                                </div>
+                                <div class="page5-elem">
+                                    <h3>VALEDICTORY</h3>
+                                    <p>2:45 PM - 4:00 PM
+                                        <br>Mini Auditorium</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="section section--full" id="Venue">
+        <div class="venue-container">
+            <h1 class="venue-header">Event Venue</h1>
+            <p class="venue-name">Mody University of Science and Technology, Lakshmangarh, Rajasthan</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.2523570566836!2d75.03345947547072!3d27.802002076128417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cab0999c02435%3A0x6beb28aded79e5e7!2sMody%20University!5e0!3m2!1sen!2sin!4v1704434533954!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="section section--full" id="team">
+        <div class="team-container">
+            <h1 class="team-header">Our Team</h1>
+            
+            <!-- Lead Card -->
+            <div class="lead-card-container">
+                <div class="card lead-card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/anand sir.png" alt="Team Lead">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Dr. Anand Sharma</h3>
+                            <span class="position">Faculty Coordinator</span>
+                            <span class="phone">+91 7737785474</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Members Grid -->
+            <div class="team-grid">
+                <!-- Member 1 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Lipi.jpg" alt="Team Member 1">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Lipi Jain</h3>
+                            <span class="position">Student Coordinator</span>
+                            <span class="phone">+91 87703 86486</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Navneet.jpg" alt="Team Member 2">
+                    </div>
+
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Navneet Kaur</h3>
+                            <span class="position">Student Coordinator</span>
+                            <span class="phone">+91 95880 23937</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Anjali.jpg" alt="Team Member 3">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Anjali Modi</h3>
+                            <span class="position">Committee Head</span>
+                            <span class="phone">+91 6377 049 591</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Reemika.jpg" alt="Team Member 5">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Reemika Arora</h3>
+                            <span class="position">Documentation & Content Head</span>
+                            <span class="phone">Event Head : Mock Recruitment & Vlogify</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Member 5 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Avisha.jpg" alt="Team Member 4">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Avisha Maheshwari</h3>
+                            <span class="position">Sponsorship & Budgeting Head
+                            </span>
+                            <span class="phone">Event Head : Code Quest & Workshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="assets/images-vids/Shreya.jpg" alt="Team Member 6">
+                    </div>
+                    <div class="content">
+                        <div class="contentBx">
+                            <h3>Shreya Agrawal</h3>
+                            <span class="position">Media & Promotion Head</span>
+                            <span class="phone">Event Head : Entrepreneur's Point & Tech Exhibit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="section section--full" id="gallery">
+        <div class="gallery-container">
+            <h1 class="gallery-header">Gallery</h1>
+            <div class="gallery-grid ">
+                <div class="gallery-item ">
+                    <img src="assets/gallery/1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery/2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery/3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery/4.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/gallery/5.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/1.JPG" alt="Gallery Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/3.JPG" alt="Gallery Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/5.JPG" alt="Gallery Image 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/2.JPG" alt="Gallery Image 9">
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="image3/7.JPG" alt="Gallery Image 10">
+                </div> -->
+                <div class="gallery-item">
+                    <img src="image3/8.jpg" alt="Gallery Image 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/9.JPG" alt="Gallery Image 12">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/4.JPG" alt="Gallery Image 13">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/10.JPG" alt="Gallery Image 14">
+                </div>
+                <div class="gallery-item">
+                    <img src="image3/11.JPG" alt="Gallery Image 15">
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="image3/12.JPG" alt="Gallery Image 16">
+                </div> -->
+                <div class="gallery-item">
+                    <img src="image3/14.JPG" alt="Gallery Image 17">
+                </div>
+                <!-- <div class="gallery-item">
+                    <img src="image3/16.JPG" alt="Gallery Image 19">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    <section class="Sponsors" id="Sponsors">
+        <br>
+        <h3>PAST SPONSORS</h3>
+        <br>
+        <br>
+        <br>
+      
+      <div class="setting" data-aos="fade-left">
+      <img src="assets/gallery/a.jpg" width="250" height="200">
+      <img src="assets/gallery/b.jpg" width="250" height="200">
+      <img src="assets/gallery/c.jpg" width="250" height="200">
+      <img src="assets/gallery/d.jpg" width="250" height="200">
+      <img src="assets/gallery/e.jpg" width="250" height="200">
+      <img src="assets/gallery/f.jpg" width="250" height="200">
+      <img src="assets/images-vids/Campus_A.jpeg" width="250" height="200">
+    <img src="assets/images-vids/Certopus.png" width="250" height="200">
+    <img src="assets/images-vids/cindy.png" width="250" height="200">
+    <img src="assets/images-vids/coding_ninja.png" width="250" height="200">
+    <img src="assets/images-vids/Dadmaq.png" width="250" height="200">
+    <img src="assets/images-vids/Finatics.png" width="250" height="200">
+    <img src="assets/images-vids/Forever_y_b.png" width="250" height="200">
+    <img src="assets/images-vids/interview_buddy.png" width="250" height="200">
+    <img src="assets/images-vids/regex.png" width="250" height="200">
+    <img src="assets/images-vids/Unstop-Logo.jpg" width="250" height="200">
+    <img src="assets/images-vids/Upcoming_E.png" width="250" height="200">
+      </div>
+      
+      </div>
+      
+      
+      <!-- <a href="https://drive.google.com/file/d/1Ikp7iJN8i8sBmycBmAieZOnJmoLkF_nl/view?usp=drive_link" class="btn">Sponsor Now</a> -->
+      </div>
+      </section>
+      
+      
+      <section class="Contact" id="Contact Us">
+        <h3>CONTACT DETAILS</h3>
+        <div class="rows">
+          <div class="column2">
+            <h1>Faculty Coordinator</h1>
+            <h2>Dr. Anand Sharma</h2>
+            <p>SBC, CSI Student Branch<br>MUST, Rajasthan, India<br>+91-7737785474</p>
+          </div>
+          
+          <div class="column2">
+            <h1>Student Coordinators</h1>
+            <h2>Lipi Jain</h2>
+            <p>III year, CSE, SET<br>MUST, Rajasthan, India<br>+91 87703 86486</p>
+            
+            <h2>Navneet Kaur</h2>
+            <p>III year, CSE, SET<br>MUST, Rajasthan, India<br>+91 95880 23937</p>
+            
+            <h1>Committee Head</h1>
+            <h2>Anjali Modi</h2>
+            <p>III year, CSE, SET<br>MUST, Rajasthan, India</p>
+          </div>
+          
+          <div class="column2">
+            <div class="social-media">
+              <h1>Social Media</h1>
+              <a href="https://www.instagram.com/csi_lakshmangarh/?utm_medium=copy_link" class="fa fa-instagram"><i class='bx bxl-instagram'></i></a>
+              <a href="https://www.facebook.com/utkarsh.csi.9" class="fa fa-facebook"><i class='bx bxl-facebook'></i></a>
+              <a href="https://twitter.com/CsiUtkarsh/status/1169547183613284352?s=17" class="fa fa-twitter"><i class='bx bxl-twitter'></i></a>
+              <a href="mailto:mudroid6.0@gmail.com" class="fa fa-envelope"><i class='bx bxl-gmail'></i></a>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Move the footer here, inside the Contact section -->
+        <div class="footer">
+            <p>© Copyright CSI-LC. All Rights Reserved | Designed by: Team Utkarsh</p>
+        </div>
+      </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
